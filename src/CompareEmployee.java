@@ -9,9 +9,9 @@ import java.util.List;
 public class CompareEmployee {
     public static void main(String[] args) {
         List<Employee> emp = new ArrayList<>();
-        Employee e1 = new Employee(123, "Troy", 25);
-        Employee e2 = new Employee(137, "Sam", 27);
-        Employee e3 = new Employee(111, "John", 22);
+        Employee e1 = new Employee(123, "Troy", 24, 30000);
+        Employee e2 = new Employee(137, "Sam", 29, 45000);
+        Employee e3 = new Employee(111, "John", 27, 33000);
 
         emp.add(e1);
         emp.add(e2);

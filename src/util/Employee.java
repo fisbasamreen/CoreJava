@@ -1,21 +1,23 @@
 package src.util;
 
 public class Employee {
-    Integer id;
+    int id;
     String name;
-    Integer age;
+    int age;
+    double salary;
 
-    public Employee(Integer id, String name, Integer age) {
+    public Employee(int id, String name, int age, double salary) {
         this.id = id;
         this.name = name;
         this.age = age;
+        this.salary = salary;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -27,12 +29,20 @@ public class Employee {
         this.name = name;
     }
 
-    public Integer getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(Integer age) {
+    public void setAge(int age) {
         this.age = age;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     @Override
@@ -41,6 +51,7 @@ public class Employee {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
+                ", salary=" + salary +
                 '}';
     }
 }
