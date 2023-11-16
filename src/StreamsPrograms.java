@@ -29,7 +29,8 @@ public class StreamsPrograms {
 
         //Max element
         int max =  numbers.stream()
-                .max(Integer::compareTo).get();
+                    .max(Integer::compareTo).
+                    get();
         System.out.println("max " + max);
 
         //Find all distinct numbers
